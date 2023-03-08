@@ -8,16 +8,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 #navbar {
   width: 90%;
   top: 0;
   left: 5%;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 #navbar a {
@@ -61,8 +63,100 @@ a .icon {
 #location input {
   width: 90%;
   border: none;
+  background-color: transparent;
 }
 
 #location input:focus {
   outline: none;
+}
+
+#home {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home-text {
+  width: 55%;
+  margin-left: 50px;
+}
+
+#weather {
+  width: 45%;
+  height: 100vh;
+  background-image: url('./bg.png') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: -1;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+#top, #bottom {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+
+#bottom {
+  top: 70%;
+  padding: 10px;
+  left: 20%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: .5rem;
+  backdrop-filter: blur(5px);
+}
+
+#top .right {
+  font-size: 20px;
+  transform: rotate(270deg);
+}
+
+#top h3{
+  font-size: 30px;
+  margin: 0;
+}
+
+#top h1 {
+  font-size: 40px;
+}
+
+#bottom .element {
+  flex-direction: column;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  #home {
+    flex-direction: column-reverse;
+  }
+
+  #home-text {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  #weather {
+    width: 100%;
+    clip-path: none;
+  }
+
+  #top{
+    width: 90%;
+    left: 5%;
+  }
+
+  #bottom {
+    width: 80%;
+    left: 5%;
+    margin: 0;
+  }
 }
