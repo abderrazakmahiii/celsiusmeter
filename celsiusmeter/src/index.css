@@ -30,6 +30,16 @@ body {
   font-size: 30px;
 }
 
+#editor {
+  color: white;
+}
+
+#editor a {
+  font-family: 'Montserrat';
+  text-decoration: underline;
+  font-size: 15px;
+}
+
 #right {
   width: 100%;
   display: block;
@@ -74,6 +84,21 @@ a .icon {
   background-position: center bottom;
 }
 
+#lost {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#lost p {
+  font-size: 15px;
+}
+
+#top.loaded, #bottom.loaded, #lost.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 #context {
   display: block;
   margin: auto;
@@ -108,6 +133,9 @@ a .icon {
   position: absolute;
   top: 30%;
   width: 50vw;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-20px);
 }
 
 #top .right {
@@ -126,6 +154,9 @@ a .icon {
   position: absolute;
   bottom: 10%;
   width: 50vw;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-20px);
 }
 
 @media (max-width: 900px) {

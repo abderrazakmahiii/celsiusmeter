@@ -8,6 +8,9 @@ export default function Navbar() {
         <div id="left">
         <a href=''>CelsiusMeter <TiWeatherPartlySunny className='icon' /></a>
         </div>
+        <div id="editor">
+          by <a href='https://abderrazakmahiii.github.io/myportfolio/' target='_blank' >Abderrazak Mahi</a>
+        </div>
     </div>
   )
   }
