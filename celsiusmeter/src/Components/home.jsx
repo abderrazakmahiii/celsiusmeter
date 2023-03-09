@@ -29,7 +29,7 @@ export default function Home() {
               value={location}
               onChange={(e) => setLocation(e.target.value)}
               onKeyPress={searchLocation}
-              placeholder="New York"
+              placeholder="Enter a location"
             />
           </div>
         <div id="top">
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div id="bottom">
           <div className="element">
-            <span>{data.main && data.main.pressure}</span> {/* add a check for data.main */}
+            <span>{data.main && `${data.main.pressure}Pa`}</span> {/* add a check for data.main */}
             <h4>
               <IoMdRainy /> Pressure
             </h4>
