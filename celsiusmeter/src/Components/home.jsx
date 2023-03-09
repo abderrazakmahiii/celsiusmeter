@@ -4,6 +4,7 @@ import { IoMdRainy } from 'react-icons/io';
 import { WiHumidity } from 'react-icons/wi';
 import { FiWind } from 'react-icons/fi';
 import { RiCloudOffFill } from 'react-icons/ri'; 
+import {FiMapPin} from 'react-icons/fi';
 
 import axios from 'axios';
 
@@ -43,6 +44,7 @@ export default function Home() {
             />
           </div>
           {wrong ? <div id='lost' className={!loaded ? 'loaded' : ''}><RiCloudOffFill /><p >{wrong}</p></div>:null}
+          <p id='welcome' className={!loaded && !wrong ? 'unloaded':'load'}>Try looking for your hometown <FiMapPin/></p>
         <div id="top" className={loaded ? 'loaded' : ''}>
           <div className="left">
             <h3>{data.name}</h3> {/* remove the curly braces */}

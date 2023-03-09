@@ -94,6 +94,21 @@ a .icon {
   font-size: 15px;
 }
 
+#welcome {
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.unloaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.load {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
 #top.loaded, #bottom.loaded, #lost.loaded {
   opacity: 1;
   transform: translateY(0);
