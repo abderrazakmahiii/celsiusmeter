@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&family=Montserrat:wght@300&display=swap');
 
 body {
+  background-color: #1e1e1e;
   margin: 0;
   font-family: 'Montserrat', sans-serif,
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -24,27 +25,28 @@ body {
 
 #navbar a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: 'Cookie', cursive;
   font-size: 30px;
 }
 
 #right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #right #location {
-  width: 110px;
+  width: 40%;
   height: 35px;
-  margin-left: 50px;
+  margin-top: 50px;
+  margin-left: 30%;
   border-radius: .5rem;
   border: 1px solid black;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
-  float: left;
   padding: 5px;
 }
 
@@ -61,7 +63,7 @@ a .icon {
 }
 
 #location input {
-  width: 90%;
+  width: 50%;
   border: none;
   background-color: transparent;
 }
@@ -80,6 +82,7 @@ a .icon {
 #home-text {
   width: 55%;
   margin-left: 50px;
+  color: white;
 }
 
 #weather {
@@ -92,7 +95,7 @@ a .icon {
   display: flex;
   flex-direction: column;
   position: relative;
-  z-index: -1;
+  
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -132,6 +135,10 @@ a .icon {
 #bottom .element {
   flex-direction: column;
   margin: 0;
+}
+
+#bottom {
+  text-align: center;
 }
 
 @media (max-width: 900px) {
