@@ -22,20 +22,8 @@ export default function Home() {
   };
   return (
     <div id="home">
-      <div id="home-text">
-        <h1>We predict the future</h1>
-        <p>
-          Never get caught in the rain again! With CelsiusMeter, you can get
-          up-to-date forecasts for your location and plan your day with
-          confidence. Our advanced technology provides accurate weather
-          information, so you can stay ahead of the storm. Whether you're
-          planning a picnic, going for a run, or heading out on a road trip,
-          CelsiusMeter has you covered."
-        </p>
-      </div>
-      <div id="weather">
-        <div id="right">
-          <div id="location">
+          <div id="context">
+            <div id="location">
             <ImLocation2 className="icon" />
             <input
               value={location}
@@ -44,7 +32,6 @@ export default function Home() {
               placeholder="New York"
             />
           </div>
-        </div>
         <div id="top">
           <div className="left">
             <h3>{data.name}</h3> {/* remove the curly braces */}
@@ -75,7 +62,7 @@ export default function Home() {
             </h4>
           </div>
         </div>
+          </div>
       </div>
-    </div>
   );
 }
