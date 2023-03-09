@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/celsiusmeter/static/css/main.2ac92bf1.css",
-    "main.js": "/celsiusmeter/static/js/main.75b7961a.js",
+    "main.css": "/celsiusmeter/static/css/main.f07d6ec4.css",
+    "main.js": "/celsiusmeter/static/js/main.8a1bc093.js",
     "static/js/787.ab26bf16.chunk.js": "/celsiusmeter/static/js/787.ab26bf16.chunk.js",
     "static/media/bg.png": "/celsiusmeter/static/media/bg.5d36b428183aba10ca3d.png",
     "index.html": "/celsiusmeter/index.html",
-    "main.2ac92bf1.css.map": "/celsiusmeter/static/css/main.2ac92bf1.css.map",
-    "main.75b7961a.js.map": "/celsiusmeter/static/js/main.75b7961a.js.map",
+    "main.f07d6ec4.css.map": "/celsiusmeter/static/css/main.f07d6ec4.css.map",
+    "main.8a1bc093.js.map": "/celsiusmeter/static/js/main.8a1bc093.js.map",
     "787.ab26bf16.chunk.js.map": "/celsiusmeter/static/js/787.ab26bf16.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ac92bf1.css",
-    "static/js/main.75b7961a.js"
+    "static/css/main.f07d6ec4.css",
+    "static/js/main.8a1bc093.js"
   ]
 }
