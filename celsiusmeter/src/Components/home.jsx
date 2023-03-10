@@ -57,7 +57,7 @@ export default function Home() {
         </div>
         <div id="bottom" className={loaded ? 'loaded' : ''}>
           <div className="element">
-            <span>{data.main && `${data.main.pressure}Pa`}</span> {/* add a check for data.main */}
+            <span>{data.main && `${data.main.pressure} Pa`}</span> {/* add a check for data.main */}
             <h4>
               <IoMdRainy /> Pressure
             </h4>
